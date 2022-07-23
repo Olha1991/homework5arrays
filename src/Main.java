@@ -100,8 +100,8 @@ public class Main {
         // 1
 
         ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < weeks.length; i ++) {
-            list.add(weeks[i]);
+        for (int i = 0; i < weights.length; i ++) {
+            list.add(weights[i]);
         }
         ArrayList<Integer> odd = new ArrayList<Integer>();
 
