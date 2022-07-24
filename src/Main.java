@@ -8,7 +8,7 @@ public class Main {
         // 1
         int[] weights = new int[3];
         for (int i = 0; i < weights.length; i++) {
-            weights[i] = (i * 1) + 1;
+            weights[i] = i + 1;
             System.out.println(weights[i]);
         }
         System.out.println();
@@ -31,7 +31,6 @@ public class Main {
 
         // 1
         for (int i = 0; i < weights.length; i++) {
-            weights[i] = (i * 1) + 1;
             if (i == weights.length - 1) {
                 System.out.print(weights[i]);
             } else {
@@ -65,7 +64,7 @@ public class Main {
 
         // 1
         for (int i = weights.length - 1; i >= 0; i--) {
-            if (i == weights.length - weights.length) {
+            if (i == 0) {
                 System.out.print(weights[i]);
             } else {
                 System.out.print(weights[i] + ", ");
@@ -74,18 +73,22 @@ public class Main {
         System.out.println();
 
         // 2
-        for (int i = boxes.length - 1; i >= 0; i--) {
-            if (i == boxes.length - boxes.length) {
+        for (int i = boxes.length -1; i >= 0; i--) {
+            if (i == 0) {
                 System.out.print(boxes[i]);
             } else {
                 System.out.print(boxes[i] + ", ");
             }
         }
+
+
+
+
         System.out.println();
 
         // 3
         for (int i = weeks.length - 1; i >= 0; i--) {
-            if (i == weeks.length - weeks.length) {
+            if (i == 0) {
                 System.out.print(weeks[i]);
             } else {
                 System.out.print(weeks[i] + ", ");
@@ -99,19 +102,11 @@ public class Main {
 
         // 1
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < weights.length; i ++) {
-            list.add(weights[i]);
+            if (weights[i] % 2 != 0)
+                weights[i]++;
+            System.out.print(weights[i] + " ");
         }
-        ArrayList<Integer> odd = new ArrayList<Integer>();
-
-        for (int i = 0; i < list.size(); i++) {
-            int x = list.get(i);
-            if (x % 2 != 0)
-                odd.add(x + 1);
-        }
-        System.out.println(odd);
-
 
 
     }
