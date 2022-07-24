@@ -58,7 +58,6 @@ public class Main {
             }
         }
         System.out.println();
-        System.out.println();
 
 // Task 3
 
@@ -80,10 +79,6 @@ public class Main {
                 System.out.print(boxes[i] + ", ");
             }
         }
-
-
-
-
         System.out.println();
 
         // 3
@@ -95,19 +90,13 @@ public class Main {
             }
         }
         System.out.println();
-        System.out.println();
-
 
 // Task 4
 
         // 1
-
         for (int i = 0; i < weights.length; i ++) {
-            if (weights[i] % 2 != 0)
-                weights[i]++;
+            if (weights[i] % 2 != 0) weights[i]++;
             System.out.print(weights[i] + " ");
         }
-
-
     }
 }
